@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
+    <context:component-scan base-package="edu.sjsu.mayur.jain.springRecepies"/>
+
+    <bean id="battery" class="edu.sjsu.mayur.jain.springRecepies.setterInjection.Battery">
+        <property name="name" value="AAA" />
+        <property name="price" value="2.5" />
+        <property name="rechargeable" value="true" />
+    </bean>
+
+    <bean id="disc" class="edu.sjsu.mayur.jain.springRecepies.setterInjection.Disc">
+        <property name="name" value="CD-RW" />
+        <property name="price" value="1.5" />
+        <property name="capacity" value="700" />
+    </bean>
+
+</beans>
