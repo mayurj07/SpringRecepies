@@ -30,5 +30,5 @@
         </property>
         <property name="discount" value="0.2" />
     </bean>
-    
+
 </beans>
